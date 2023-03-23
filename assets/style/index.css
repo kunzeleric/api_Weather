@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
+
+    h1{
+        font-size: 2vw;
+        text-decoration: overline;
+        color: rgba(50, 94, 255, 0.801);
+    }
+
+    #logo{
+        width: 300px;
+        height: 300px;
+    }
+
+#input{
+    padding-top: 4vw;
+}
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input{
+        height: 50px;
+        width: 500px;
+        font-size: 0.8vw;
+        text-indent: 0.7vw;
+        margin-bottom: 2em;
+        border-radius: 2em;
+    }
+
+    button{
+        height: 45px;
+        width: 350px;
+        background-color: rgba(50, 94, 255, 0.801);
+        border-radius: 10px;
+        color: #fff;
+        font-size: 0.8vw;
+        font-weight: 700;
+        border: 0;
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
+
+    button:hover{
+        transform: translateY(-10%);
+        background-color: rgb(50, 94, 255);
+    }
+
+#cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vw;
+}
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+        .container h2{
+            color: #000;
+            font-weight: 500;
+            padding-bottom: 0.2vw;
+        }
+
+
+    .content{
+        display: flex;
+        height: 80px;
+        padding: 2vw 3vw;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(50, 94, 255, 0.801);
+        border-radius: 15px;
+        color: #fff;
+        font-size: 1.2vw;
+        font-weight: 600;
+    }
