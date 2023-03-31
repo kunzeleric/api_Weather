@@ -21,6 +21,7 @@ header{
     #logo{
         width: 300px;
         height: 300px;
+        margin-bottom: 20px;
     }
 
 #input{
@@ -61,36 +62,108 @@ header{
     }
 
 #cards{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr;
     justify-content: center;
-    align-items: center;
-    margin-top: 4vw;
+    margin: 2vw auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 400px;
+    padding: 15px;
 }
 
     .container{
-        display: flex;
-        flex-direction: column;
         text-align: center;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
+        display: grid;
+        justify-content: center;
+
     }
 
         .container h2{
             color: #000;
-            font-weight: 500;
+            font-weight: 600;
             padding-bottom: 0.2vw;
+            
         }
 
 
     .content{
-        display: flex;
-        height: 80px;
-        padding: 2vw 3vw;
-        justify-content: center;
+        display: grid;
         align-items: center;
+        height: auto;
+        padding: 10px 0;
+        width: 15vw;
         background-color: rgba(50, 94, 255, 0.801);
         border-radius: 15px;
         color: #fff;
-        font-size: 1.2vw;
+        font-size: 1.4vw;
         font-weight: 600;
     }
+
+    .detalhe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10vw;
+        margin: auto;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 10px;
+        border: 2px dashed rgba(50, 94, 255, 0.801);
+        border-radius: 10px;
+    }
+
+    .imagem-tempo{
+        width: 60px;
+    }
+
+
+@media (max-width: 450px){
+
+    header{
+        flex-direction: column;
+        margin-top: 1em;
+    }
+    
+        h1{
+            font-size: 8vw;
+        }
+    
+        #logo{
+            width: 170px;
+            height: auto;
+        }
+    
+        input{
+            width: 80%;
+            font-size: 20px;
+            text-indent: 5vw;
+            margin-bottom: 1em;
+        }
+    
+        button{
+            font-size: 20px;
+            width: auto;
+            padding: 0 10px;
+            
+        }
+
+    
+    #cards{
+        width: 80%;
+        margin-top: 2rem;
+    }
+    
+        .content{
+            width: auto;
+            font-size: 20px;
+        }
+    
+        .detalhe{
+            width: auto;
+            margin: 0;
+        }
+
+}
